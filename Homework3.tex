@@ -1,0 +1,78 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr, lastpage}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{amsmath,amssymb,amsthm}
+
+
+% Universes
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+
+% Groups commands
+\newcommand{\inv}{^{-1}}
+\newcommand{\lcm}{\mathrm{lcm}}
+\newcommand{\lr}[1]{\langle #1 \rangle}
+
+%Solutions
+\usepackage{color}
+\newcommand{\sol}[1]{{\leavevmode\color{blue}#1}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\parindent}{0cm}
+\pagestyle{fancy}
+\lhead{MATH458 Abstract Algebra}
+\rhead{Homework 3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\section*{Homework 3}
+\begin{enumerate}
+
+    \item Let $G$ be an abelian group. (Do not assume that $G$ is finite.)
+    \begin{enumerate}
+        \item Prove that $H=\{x\in G\mid|x|\text{ is odd}\}$ is a subgroup of $G$. 
+        \item Give an example to show that $K=\{x\in G\mid|x|\text{ is 1 or even}\}$ need not be subgroup of $G$. 
+    \end{enumerate} 
+
+    
+    \item Show that $U(n)$ is a group under multiplication modulo $n$. 
+    
+    
+    \item Find a noncyclic subgroup of order 4 in $U(36)$. \textit{(Hint: Use Homework 2 Problem 3 for inspiration.)}
+    
+
+    \item Determine the subgroup lattice of $\ZZ_{16}$. Generalizer to $\ZZ_{p^n}$ where $p$ is prime and $n$ is some positive integer. (No justification required.)
+    
+    %%%% LaTeX example
+    %%%% Subgroup lattice for Z_12
+    % \begin{tikzpicture}[ on grid]
+    %     \node(Z12) at (0,0)     {$\ZZ_{12}=\lr{1}$};
+    %     \node(C2)  [below left = of Z12] {$\lr{2}$};
+    %     \node(C3)  [below right = of Z12] {$\lr{3}$};
+    %     \node(C4)  [below left = of C2] {$\lr{4}$};
+    %     \node(C6)  [below right = of C2] {$\lr{6}$};
+    %     \node(C0)  [below right = of C4] {$\langle 0\rangle$};
+    %     \draw(Z12) -- (C2);
+    %     \draw(Z12) -- (C3);
+    %     \draw(C2) -- (C4);
+    %     \draw(C2) -- (C6);
+    %     \draw(C3) -- (C6);
+    %     \draw(C4) -- (C0);
+    %     \draw(C6) -- (C0);
+    % \end{tikzpicture}
+
+
+    \item Suppose that $G$ is a group with more than one element. If the only subgroups of $G$ are $\{e\}$ and $G$, prove that $G$ is cyclic and has prime order. (Do not assume from the start that $G$ is finite.)
+    
+\end{enumerate}
+
+  
+\end{document}
